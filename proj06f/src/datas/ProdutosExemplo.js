@@ -8,9 +8,9 @@ const ProdutosExemplo = [
         preco:1000,
         descricao:"O produto é muito bom porquê sim...",
         imagens: [
-            "./assets/01.jpg",
-            "assets/02.jpg",
-            "assets/03.jpg",
+            "/assets/01.jpg",
+            "/assets/02.jpg",
+            "/assets/03.jpg",
         ]
     },
     {
@@ -20,9 +20,9 @@ const ProdutosExemplo = [
         preco:1000,
         descricao:"O produto é muito bom porquê sim...",
         imagens: [
-            "assets/04.jpg",
-            "assets/05.jpg",
-            "assets/06.jpg",
+            "/assets/04.jpg",
+            "/assets/05.jpg",
+            "/assets/06.jpg",
         ]
     },
     {
@@ -32,9 +32,9 @@ const ProdutosExemplo = [
         preco:1000,
         descricao:"O produto é muito bom porquê sim...",
         imagens: [
-            "assets/07.jpg",
-            "assets/08.jpg",
-            "assets/09.jpg",
+            "/assets/07.jpg",
+            "/assets/08.jpg",
+            "/assets/09.jpg",
         ]
     },
     {
@@ -44,9 +44,9 @@ const ProdutosExemplo = [
         preco:1000,
         descricao:"O produto é muito bom porquê sim...",
         imagens: [
-            "assets/10.jpg",
-            "assets/11.jpg",
-            "assets/12.jpg",
+            "/assets/10.jpg",
+            "/assets/11.jpg",
+            "/assets/12.jpg",
         ]
     },
     {
@@ -56,9 +56,9 @@ const ProdutosExemplo = [
         preco:1000,
         descricao:"O produto é muito bom porquê sim...",
         imagens: [
-            "assets/13.jpg",
-            "assets/14.jpg",
-            "assets/15.jpg",
+            "/assets/13.jpg",
+            "/assets/14.jpg",
+            "/assets/15.jpg",
         ]
     },
     {
@@ -68,9 +68,9 @@ const ProdutosExemplo = [
         preco:1000,
         descricao:"O produto é muito bom porquê sim...",
         imagens: [
-            "assets/16.jpg",
-            "assets/17.jpg",
-            "assets/18.jpg",
+            "/assets/16.jpg",
+            "/assets/17.jpg",
+            "/assets/18.jpg",
         ]
     },
     {
@@ -80,9 +80,9 @@ const ProdutosExemplo = [
         preco:1000,
         descricao:"O produto é muito bom porquê sim...",
         imagens: [
-            "assets/19.jpg",
-            "assets/20.jpg",
-            "assets/21.jpg",
+            "/assets/19.jpg",
+            "/assets/20.jpg",
+            "/assets/21.jpg",
         ]
     },
     {
@@ -92,9 +92,9 @@ const ProdutosExemplo = [
         preco:1000,
         descricao:"O produto é muito bom porquê sim...",
         imagens: [
-            "assets/22.jpg",
-            "assets/23.jpg",
-            "assets/24.jpg",
+            "/assets/22.jpg",
+            "/assets/23.jpg",
+            "/assets/24.jpg",
         ]
     },
 

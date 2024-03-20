@@ -19,7 +19,7 @@ const ModeloDados = styled.div`
     padding: 16px;
 `
 export default function Exibidor(props) {
-    return Objects.keys(props.produto).length > 0 ?
+    return Object.keys(props.produto).length > 0 ?
         <Modelo>
             <ModeloImagens>
             <img
