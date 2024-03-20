@@ -18,9 +18,38 @@ const ModeloDados = styled.div`
     gap: 16px;
     padding: 16px;
 `
-export default function Exibidor() {
-    return <Modelo>
+export default function Exibidor(props) {
+    return Objects.keys(props.produto).length > 0 ?
+        <Modelo>
+            <ModeloImagens>
+            <img
+                src={ props.produto.imagens[0]}
+                alt= "foto deo produto"
+                height = {450} />
+                <img
+                src={ props.produto.imagens[1]}
+                alt= "foto deo produto"
+                height = {450} />
+                <img
+                src={ props.produto.imagens[2]}
+                alt= "foto deo produto"
+                height = {450} />
+            </ModeloImagens>
 
-    </Modelo>
+            <ModeloDados>
+                <div> { props.produto.marca} </div>
+                <div> { props.produto.modelo} </div>
+                <div> R${ props.produto.preco},00 </div>
+                <div> { props.produto.descricao} </div>
+
+                <button> Adicionar ao carrinho</button>
+            </ModeloDados>
+
+        </Modelo>
+        :
+        <Modelo>
+            <ModeloDados>produto nao encontrado</ModeloDados>
+
+        </Modelo>
 }
 // Paramos aqui falta explica 
