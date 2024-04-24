@@ -3,7 +3,7 @@ const ProdutoInicial = {
     marca:"",
     modelo:"",
     preco:"",
-    descricao:"teste",
+    descricao:"",
     imagens: [
         "",
         "",

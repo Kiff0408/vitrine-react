@@ -8,7 +8,7 @@ const configuracao = {
     useUnifiedTopology:true
 }
 
-mongoose.connect(endereco, configuracao,function(){
-    console.log("CONECTADO COM O BANCO DE DADOS!!")
-    
-})
+mongoose.connect(endereco, configuracao).then(( ) => console.log("CONECTADO COM BANCO DE DADOS!!"))
+.catch((erro) => {console.log(erro);});
+
+mongoose.Promise = global.Promise

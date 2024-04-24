@@ -1,12 +1,37 @@
 import React, {useState} from "react";
 import Formulario from "../componentes/Formulario";
 import ProdutoInicial from "../datas/ProdutosInicial";
+import {CatalogarProduto} from "../functions/RequisicaoServidor"
 
 
 export default function Catalogar() {
     const [produto, definirProduto ] = useState(ProdutoInicial)
 
-    return <Formulario>
+    function MudarTexto(evento){
+        const valor = evento.target.value
+        const campo = evento.target.name
+        definirProduto({...produto, [campo]: valor})
+    }
+
+    function MudarPromo(evento) {
+        const valor = evento.target.checked
+        definirProduto({...produto, "promocao": valor})
+    }
+
+    function MudarImagem(evento){
+        const indice = evento.target.id
+        const imagens = produto.imagens
+        imagens[indice] = evento.target.value
+    definirProduto({...produto, "imagens": imagens})
+    }
+
+    function Catalogar(evento) {
+        evento.preventDefault()
+        CatalogarProduto(produto)
+        definirProduto(ProdutoInicial)
+    }
+
+    return <Formulario onSubmit={Catalogar}>
         <input
         value={ produto.codigo}
         onChange={ MudarTexto}
